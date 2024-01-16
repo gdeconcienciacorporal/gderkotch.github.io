@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDE - Trail Running</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gde1.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+ <div class="container">
+        <div class="main-container">
+            <h1>PROGRAMA DE ENTRENAMIENTO GDE -Trail Running</h1>
+            <h2>Alumno: Roberto Kotch</h2>
+        </div>
+            <h2>Objetivo mensual: </h2>
+            <h2>Fase: </h2>
+            <h2 id ="pageTitle">Fecha proxima carrera: 2024/02/03</h2> 
+            <p id="result"></p> 
+            <p>Indicaciones previas:  </p>
+        
+        <div class="sub-container">
+            <h4>SEMANA 2</h4>
+            <p>Objetivo semanal: Mejora de las sensaciones en subida</p>
+            <div>
+                <h2>Entrada en calor </h2>   <p> 4 vueltas x 14 repeticiones</p>
+                <video width="640" height="360" controls>
+                    <source src="Video1.mp4" type="video/mp4">
+                </video>
+                <video width="640" height="360" controls>
+                    <source src="Video2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div><h2> Running </h2>
+        </div>
+
+        <div class="column-container 1">           
+            <div class="column">
+                <h3>Dia 1</h3>
+                <p>Miércoles: 10 km Calle. </p>
+                <p>  - 1 km fuerte.</p>
+                <p>  - 3 km ágiles. </p>
+                <p>  - 4 km 30" agiles x 30" suave. </p>
+                <p>  - 2 km de mayor a menor.</p>
+            </div>
+            <div class="column">
+                <h3>Dia 2</h3>
+                <p> Jueves mañana: 6 km calle 4 km en subida. </p>
+                <p> Jueves tarde: 14 km Zona de Arco. </p>
+                <p>  - 3 km de mayor a menor. </p>
+                <p>  - 5 km subiendo 40" bajando 15" .</p>
+                <p>  - 2 km sensaciones incomodas en subida. </p>  
+                <p>  - 4 km bajada rapida.</p>  
+            </div>
+            <div class="column">
+                <h3>Dia 3</h3>        
+                <p> Viernes: 7.6 km Series Triangulares Parque de montaña. </p>
+                <p>  - 6x200m Subida fuerte x Siete Colinas arriba descansamos 1':30". </p>
+                <p>  - 6x200m Bajada fuerte x Siete colinas abajo descansamos 2'. </p>
+                <p>  - 6x200m Pasada llano dique fria descansamos 30'' entre pasada. </p>
+                <p>  - 4 km de menos a mas por cerros bajos. </p>
+            </div>
+            <div class="column">
+                <h3>Dia 4</h3>        
+                <p> Sábado: 22 km Zona de arco +1400. </p>
+                <p>  - 2 km fuerte. </p>
+                <p>  - 3 km de mayor a menor . </p>
+                <p>  - 3 km 40" agil 40" treking exigido toque donde toque . </p>
+                <p>  - 6 km bajada lo mas conciente y firme posible . </p>
+            </div>
+        </div>
+
+        <div class="small-paragraph-container">
+            <p> Método de recuperación </p>
+            <p> - duchas frías 1 minutos post entrenos después del día 5 y 7.</p>     
+        </div>
+        
+        <div id="column-container 1">
+        <canvas id="myChart-line-1"></canvas>
+        </div>
+               
+        <div class="sub-container">
+            <h4>SEMANA 3</h4>
+            <p>Objetivo semanal: Mejora de la zancada en bajada.</p>
+            <div>
+                <h2>Entrada en calor </h2>   <p> 3 vueltas x 12 repeticiones </p>
+                <video width="640" height="360" controls>
+                    <source src="Video3.mp4" type="video/mp4">
+                </video>
+                <video width="640" height="360" controls>
+                    <source src="Video4.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div><h2> Running </h2>
+        </div>
+
+        <div class="column-container 2">
+            <div class="column">
+                <h3>Dia 1</h3>
+                <p>Martes: 15 km Parque de Montañan -Frias. </p>
+                <p>  - 1 km de menor a mayor..</p>
+                <p>  - 4 km ágiles..</p>
+                <p>  - 6 km haciendo 45" ágiles 45"suaves..</p>
+                <p>  - 4 km de fuerte a suave el ultimo km.</p>
+            </div>
+            <div class="column">
+                <h3>Dia 2</h3>
+                <p> Jueves mañana: 7 km Calle  2km agiles -5km al mejor ritmo posible . </p>
+                <p> Jueves tarde:  14 km Parque de montaña. </p>
+                <p>  - 1 llorenes subida por grieta bajada por adalante. </p>
+                <p>  - 3 llorenes subida por calle bajada por filo sur. </p>
+                <p>  - 2 km agiles por senderos bajos. </p>
+                <p>  - 4 km a buenas sensaciones. </p>
+            </div>
+            <div class="column">
+                <h3>Dia 3</h3>        
+                <p> Viernes: 18 km Zona de Arco.</p>
+                <p>  - 3 km suave. </p>
+                <p>  - bajada por rio seco hasta la entrada. </p>
+                <p>  - subida por filo hasta antenas lo mas fuerte posible . </p>
+                <p>  - 8 km haciendo 3' fuertes x 3' suave . </p>
+            </div>
+            <div class="column">
+                <h3>Dia 4</h3>        
+                <p> Sábado: 9.4 km Series Triangulares Parque de montaña. </p>
+                <p>  - 6x300m Subida fuerte x Siete Colinas arriba descansamos 1':30". </p>
+                <p>  - 6x300m Bajada fuerte x Siete colinas abajo descansamos 2'. </p>
+                <p>  - 6x300m Pasada llano dique fria descansamos 30'' entre pasada. </p>
+                <p>  - 4 km: 2km agil 2km fuertes. </p>
+            </div>
+        </div>
+
+        <div class="small-paragraph-container">
+            <p> Método de recuperación: </p>
+            <p> - Agua con hielo 28 minutos sumergir piernas por entreno de sábado.</p>
+        </div>
+      
+        <div id="column-container 2">
+        <canvas id="myChart-line-2"></canvas>
+        </div>              
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
