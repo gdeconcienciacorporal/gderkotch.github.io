@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDE - Trail Running</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> GDE - Trail Running</title>  
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="gde1.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -27,12 +27,16 @@
             <p>Objetivo semanal: Mejora de las sensaciones en subida</p>
             <div>
                 <h2>Entrada en calor </h2>   <p> 4 vueltas x 14 repeticiones</p>
-                <video width="640" height="360" controls>
-                    <source src="Video1.mp4" type="video/mp4">
-                </video>
-                <video width="640" height="360" controls>
-                    <source src="Video2.mp4" type="video/mp4">
-                </video>
+            <div class="image-container">  
+              <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                <source src="Video1.mp4" type="video/mp4">
+              </video>
+                </div>
+            <div class="image-container">  
+              <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                <source src="Video2.mp4" type="video/mp4">
+              </video>
+                </div>
             </div>
         </div>
 
@@ -89,12 +93,16 @@
             <p>Objetivo semanal: Mejora de la zancada en bajada.</p>
             <div>
                 <h2>Entrada en calor </h2>   <p> 3 vueltas x 12 repeticiones </p>
-                <video width="640" height="360" controls>
-                    <source src="Video3.mp4" type="video/mp4">
-                </video>
-                <video width="640" height="360" controls>
-                    <source src="Video4.mp4" type="video/mp4">
-                </video>
+            <div class="image-container">  
+              <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                <source src="Video3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="image-container">  
+              <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                <source src="Video4.mp4" type="video/mp4">
+              </video>
+            </div>
             </div>
         </div>
 
@@ -144,7 +152,10 @@
       
         <div id="column-container 2">
         <canvas id="myChart-line-2"></canvas>
-        </div>              
+        </div>      
+         <div class="image-container">
+          <img class="imagen-chica" src="logo gde blanco horizontal.png" alt="Logo Gde horizontal">
+            </div>
 
     </div>
     <script src="script.js"></script>
