@@ -33,8 +33,28 @@ body {
   font-weight: bold;
 }
 
+.sub-container p {
+  color: #666666;
+}
 
+.column-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.column {
+  flex: 1;
+  padding: 1em; /* Utiliza em en lugar de píxeles */
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+.small-paragraph-container {
+  background-color: #f4f4f4;
+  padding: 2em; /* Utiliza em en lugar de píxeles */
+}
+
+video {
   width: 100%;
   height: auto;
 }
@@ -97,7 +117,6 @@ body {
   margin: 0 auto; /* Centra el video horizontalmente */
   object-fit: cover; /* Añadido para ajustar el video en el contenedor sin distorsionarse */
 }
-
 .imagen-chica {
   max-width: 50%; /* Puedes ajustar el porcentaje según tus necesidades */
   height: auto;
