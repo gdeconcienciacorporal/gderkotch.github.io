@@ -14,7 +14,7 @@ body {
 }
 
 .main-container {
-  background-color: #1f1f2269;
+  background-color: #4d4d7669;
   padding: 2em; /* Utiliza em en lugar de píxeles */
   margin: 0; /* Eliminado para evitar márgenes laterales en dispositivos pequeños */
   text-align: center;
@@ -85,7 +85,7 @@ video {
 }
 
 .sub-container h4 {
-  background-color: #96a7a8;
+  background-color: #6a7a8e;
   padding: 2em; /* Utiliza em en lugar de píxeles */
   margin: 0; /* Elimina márgenes predeterminados */
   font-family: 'Arial', sans-serif;
