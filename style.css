@@ -1,27 +1,32 @@
 /* styles.css */
-
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #05050569;
+}
+
+.h1 {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .container {
   max-width: 90%; /* Utiliza porcentaje en lugar de píxeles */
   margin: 0 auto;
   padding: 1em; /* Utiliza em en lugar de píxeles */
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .main-container {
-  background-color: #1313db69;
+  background-color: #1f1f2269;
   padding: 2em; /* Utiliza em en lugar de píxeles */
   margin: 0; /* Eliminado para evitar márgenes laterales en dispositivos pequeños */
-  margin-top: 10px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  margin-left: 0px;
   text-align: center;
 }
 
@@ -31,17 +36,68 @@ body {
   margin: 1em 0; /* Utiliza em en lugar de píxeles */
 }
 
-h2 {
-  color: #363d3d;
-  font-size: 1.1em;
+.sub-container h2 {
+  color: #333333;
+  font-size: 1.5em;
   margin: 0; /* Eliminado para evitar márgenes predeterminados */
-  font-weight: bold;
-  font-family: system-ui;
+  font-family: 'Montserrat', sans-serif, Arial, Helvetica;
 }
+h2 {
+    display: flex;
+    font-size: 1.2em;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-start: 25px;
+    margin-inline-end: 0px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.tajawal-extralight {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.tajawal-light {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.tajawal-regular {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tajawal-medium {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tajawal-bold {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tajawal-extrabold {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.tajawal-black {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
 
 .sub-container p {
   color: #666666;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .column-container {
@@ -53,35 +109,17 @@ h2 {
   flex: 1;
   padding: 1em; /* Utiliza em en lugar de píxeles */
   text-align: center;
-  border: 1px solid #080000;
+  border: 1px solid #bfc816;
 }
-
 .small-paragraph-container {
   background-color: #f4f4f4;
   padding: 2em; /* Utiliza em en lugar de píxeles */
 }
 
-video {
-  width: 100%;
-  height: auto;
-}
-
-@media (min-aspect-ratio: 16/9) {
-  video {
-    width: auto;
-    height: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  video {
-    height: 200px;
-  }
-}
 
 @media screen and (max-width: 600px) {
   .column {
-    flex: 100%;
+    flex: 90%;
   }
 
   .main-container,
@@ -92,30 +130,60 @@ video {
 }
 
 .sub-container h4 {
-  background-color: #6a7a8e;
+  background-color: #7ecd92;
   padding: 2em; /* Utiliza em en lugar de píxeles */
   margin: 0; /* Elimina márgenes predeterminados */
-  font-family: 'Arial', sans-serif;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 1.5em;
   text-align: center;
 }
 
 .image-container {
-  background-color: #fffdfd;
+  background-color:  #ffffff;
   text-align: center;
-  padding: 1em;
-  width: 90%;
+  padding: 0em;
+  width:100%;
   border-radius: 8px; 
   height:auto;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-top: 12px;
-  margin-bottom: 10px;
-  margin-left: 35px;
-  margin-right: 35px;
 }
+.imagen-chica {
+  max-width: 15%; /* Puedes ajustar el porcentaje según tus necesidades */
+  height: auto;
+  background-color: #ffffff;
+}
+/* Estilos base para los videos */
+.video-container {
+  width: 100%; /* Ocupa el ancho completo de su contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  overflow: hidden; /* Evita que el video sobresalga del contenedor */
+}
+
+.video-container video {
+  width: 100%; /* Máximo ancho del video para pantallas de notebook */
+  height: auto; /* Altura automática para mantener la proporción */
+  display: block; /* Evita espacios no deseados debajo del video */
+}
+
+/* Media query para pantallas de celulares */
+@media (max-width: 600px) {
+  .video-container video {
+    max-width: 100%; /* Video ocupa el ancho completo en pantallas pequeñas */
+  }
+}
+/*Clase .video-container: Esta clase envuelve el video y se utiliza para controlar su ancho y centrarlo en la pantalla.
+Estilo para videos dentro de .video-container: Aquí establecemos que el video tenga un ancho del 100% para que ocupe 
+todo el espacio disponible en su contenedor. La altura se establece en auto para mantener la proporción original del 
+video.
+Media query para pantallas de celulares: Cuando la pantalla tenga un ancho máximo de 600px (lo que generalmente 
+representa pantallas de celulares), sobrescribimos el estilo del video para que tenga un max-width del 100%, 
+permitiendo que el video se ajuste al ancho de la pantalla.
+*/
 
 .image-container video {
   max-width: 100%;
@@ -127,19 +195,4 @@ video {
       gap:32px;
   margin: 0 auto; /* Centra el video horizontalmente */
   object-fit: cover; /* Añadido para ajustar el video en el contenedor sin distorsionarse */
-}
-.imagen-chica {
-  max-width: 20%; /* Puedes ajustar el porcentaje según tus necesidades */
-  height: auto;
-}
-
-element.style {
-  display: block;
-  box-sizing: border-box;
-  height: 390px;
-  width: 670px;
-  title{
-    font-size: 15em;
-  }
-  color: #f7f3f3;
 }
