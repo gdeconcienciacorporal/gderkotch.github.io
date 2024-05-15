@@ -1,26 +1,16 @@
 /* styles.css */
+
 body {
-  font-family: "Tajawal", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.h1 {
-  font-family: "Tajawal", sans-serif;
-  font-weight: 800;
-  font-style: normal;
 }
 
 .container {
   max-width: 90%; /* Utiliza porcentaje en lugar de píxeles */
   margin: 0 auto;
   padding: 1em; /* Utiliza em en lugar de píxeles */
-  font-family: "Tajawal", sans-serif;
-  font-weight: 300;
-  font-style: normal;
 }
 
 .main-container {
@@ -40,7 +30,28 @@ body {
   color: #333333;
   font-size: 1.5em;
   margin: 0; /* Eliminado para evitar márgenes predeterminados */
-  font-family: 'Montserrat', sans-serif, Arial, Helvetica;
+  font-weight: bold;
+}
+
+.sub-container p {
+  color: #666666;
+}
+
+.column-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  padding: 1em; /* Utiliza em en lugar de píxeles */
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+.small-paragraph-container {
+  background-color: #f4f4f4;
+  padding: 2em; /* Utiliza em en lugar de píxeles */
 }
 h2 {
     display: flex;
@@ -96,30 +107,28 @@ h2 {
 }
 
 
-.sub-container p {
-  color: #666666;
+
+video {
+  width: 100%;
+  height: auto;
 }
 
-.column-container {
-  display: flex;
-  flex-wrap: wrap;
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
 }
 
-.column {
-  flex: 1;
-  padding: 1em; /* Utiliza em en lugar de píxeles */
-  text-align: center;
-  border: 1px solid #bfc816;
+@media (max-width: 600px) {
+  video {
+    height: 200px;
+  }
 }
-.small-paragraph-container {
-  background-color: #f4f4f4;
-  padding: 2em; /* Utiliza em en lugar de píxeles */
-}
-
 
 @media screen and (max-width: 600px) {
   .column {
-    flex: 90%;
+    flex: 100%;
   }
 
   .main-container,
@@ -130,21 +139,19 @@ h2 {
 }
 
 .sub-container h4 {
-  background-color: #7ecd92;
+  background-color: #96c035;
   padding: 2em; /* Utiliza em en lugar de píxeles */
   margin: 0; /* Elimina márgenes predeterminados */
-  font-family: "Tajawal", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: 'Arial', sans-serif;
   font-size: 1.5em;
   text-align: center;
 }
 
 .image-container {
-  background-color:  #ffffff;
+  background-color: #fffdfd;
   text-align: center;
-  padding: 0em;
-  width:100%;
+  padding: 1em;
+  width: 100%;
   border-radius: 8px; 
   height:auto;
   display: flex;
@@ -152,38 +159,6 @@ h2 {
   align-items: center;
   overflow: hidden;
 }
-.imagen-chica {
-  max-width: 15%; /* Puedes ajustar el porcentaje según tus necesidades */
-  height: auto;
-  background-color: #ffffff;
-}
-/* Estilos base para los videos */
-.video-container {
-  width: 100%; /* Ocupa el ancho completo de su contenedor */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-  overflow: hidden; /* Evita que el video sobresalga del contenedor */
-}
-
-.video-container video {
-  width: 100%; /* Máximo ancho del video para pantallas de notebook */
-  height: auto; /* Altura automática para mantener la proporción */
-  display: block; /* Evita espacios no deseados debajo del video */
-}
-
-/* Media query para pantallas de celulares */
-@media (max-width: 600px) {
-  .video-container video {
-    max-width: 100%; /* Video ocupa el ancho completo en pantallas pequeñas */
-  }
-}
-/*Clase .video-container: Esta clase envuelve el video y se utiliza para controlar su ancho y centrarlo en la pantalla.
-Estilo para videos dentro de .video-container: Aquí establecemos que el video tenga un ancho del 100% para que ocupe 
-todo el espacio disponible en su contenedor. La altura se establece en auto para mantener la proporción original del 
-video.
-Media query para pantallas de celulares: Cuando la pantalla tenga un ancho máximo de 600px (lo que generalmente 
-representa pantallas de celulares), sobrescribimos el estilo del video para que tenga un max-width del 100%, 
-permitiendo que el video se ajuste al ancho de la pantalla.
-*/
 
 .image-container video {
   max-width: 100%;
@@ -195,4 +170,8 @@ permitiendo que el video se ajuste al ancho de la pantalla.
       gap:32px;
   margin: 0 auto; /* Centra el video horizontalmente */
   object-fit: cover; /* Añadido para ajustar el video en el contenedor sin distorsionarse */
+}
+.imagen-chica {
+  max-width: 15%; /* Puedes ajustar el porcentaje según tus necesidades */
+  height: auto;
 }

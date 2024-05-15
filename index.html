@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDE - Trail Running</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> GDE - Trail Running</title>  
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="gde1.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -15,147 +16,154 @@
 
 <body>
  <div class="container">
-        <div class="main-container">
-            <h1>PROGRAMA DE ENTRENAMIENTO GDE -Trail Running</h1>
-            <h2>Alumno: Roberto Kotch</h2>
-        </div>
-            <h2>OBJETIVO MENSUAL: Mejorar las transiciones y cadencia en subida. </h2>
-            <h2>FASE: Choque.</h2>
-            <!--<h2 id ="pageTitle">FECHA PRÓXIMA CARRERA: VALHOLL 2024/05/10</h2> 
-            <h2 id="result"></h2>  -->
-        
-        <div class="sub-container">
-            <h4>SEMANA 13
-            <br>Objetivo semanal: Buscar buenas sensaciones.</br>
-            </h4>
-            <div>
-            <p>Entrada en calor </p>   <p> 4 vueltas x 13 repeticiones</p>
-            <div class="video-container">
-                <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
-                    <source src="Video1.mp4" type="video/mp4">
-                    </video>
-                </div>
-            <div class="video-container">
-                <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
-                    <source src="Video2.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-
-        <div><h2> Running </h2>
-        </div>
-
-        <div class="column-container 1">          
-            <div class="column">
-            <h3>Dia 1</h3>
-            <p>Lunes mañana: 11 km calle a buenas sensaciones. </p>
-            <p>  -2 km de mayor a menor.</p>
-            <p>  -2 km a ritmo ágil.</p>
-            <p>  -3 km que salgan en plano.</p>
-            <p>  -4 km de buenas sensaciones.</p>
-            </div>
-            <div class="column">
-            <h3>Dia 2</h3>
-            <p> Miércoles: 15 km, 2km ágiles x 2km fuertes x 3km exigidos. </p>
-            <p>  -10 km Trail, subidas Parque de Montaña. </p>
-            <p>  -3 km subidas al Llorón (filo sur, adelante, grieta). </p>
-            <p>  -2 km subidas cerros bajos, camino al Frías. </p>
-            </div>
-            <div class="column">
-            <h3>Dia 3</h3>        
-            <p> Viernes mañana: 14 km Mixto, calle y Parque de Montaña. </p>
-            <p>  -2 km fuerte en subida.</p>
-            <p>  -4 km, 40" fuerte x 40" suave.</p>
-            <p>  -8 km Parque de Montaña, senderos bajos, al mejor ritmo posible.</p>
-            </div>
-            <div class="column">
-            <h3>Dia 4</h3>        
-            <p> Sábado: 17 km Trail zona de Arco +900. </p>
-            <p>  -2 km fuertes.</p>
-            <p>  -3 km subimos 300m fuerte x 50m bajamos suave.</p>
-            <p>  -5 km trekking exigido.</p>
-            <p>  -6 km al mejor ritmo posible, donde quede.</p>
-            </div>
-        </div>
-
-        <div class="small-paragraph-container">
-            <p> Método de recuperación </p>
-            <p> -Baños frios post entrenos, viernes y sabados duchas de 3 minutos.  </p>     
-        </div>
-        
-        <div id="column-container 1">
-        <canvas id="myChart-line-1"></canvas>
-        </div>
-              
-        <div class="sub-container">
-            <h4>SEMANA 14
-            <br>Objetivo semanal: Enfatizar en la cadencia de subida. </br> 
-            </h4>
-    
-            <div>
-            <p>Entrada en calor </p>   <p> 3 vueltas x 13 repeticiones </p>
-            <div class="video-container">
-                <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
-                    <source src="Video3.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="video-container">
-                <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
-                    <source src="Video4.mp4" type="video/mp4">
-                </video>
-            </div>
-            </div>
-        </div>
-
-        <div><h2> Running </h2>
-        </div>
-        <div class="column-container 2">
-            <div class="column">
-            <h3>Dia 1</h3>
-            <p> Lunes: 13 km Trail  Parque de Montaña. </p>
-            <p> -3 km subidas por pinos ágiles, bajada por calle fuerte. </p>
-            <p> -4 km, subidas por el frente del Lloron, subimos 100m fuerte, bajamos 50m caminando. </p>
-            <p> -2 km, 1km fuertes por Llorón, 1km fuertísimo. </p>
-            <p> -4 km buenas sensaciones senderos fáciles. </p>
-            </div>
-            <div class="column">
-            <h3>Dia 2</h3>
-            <p> Miércoles: 18 km Trail mixto, calle + Parque de Montaña. </p>
-            <p> -3 km de menos a más. </p>
-            <p> -5 km con la mayor cantidad de subidas rápidas y bajadas ágiles (Llorón por distintas subidas). </p>
-            <p> -5 km calle, 2km ágiles x 3km fuertísimos . </p>
-            <p> -5 km al mejor ritmo posible. </p>
-            </div>
-            <div class="column">
-            <h3>Dia 3</h3>        
-            <p> Viernes: 17 km calle a bajas pulsaciones.</p>
-            <p> -2 km de menor a mayor. </p>
-            <p> -15 km pulsaciones bajas buenas sensaciones. </p>
-            </div>
-            <div class="column">
-            <h3>Dia 4</h3>        
-            <p> Sábado: 27 km Trail Mixto Arco. </p>
-            <p> -7 km calle exigidoo, desde el puesto bajada hasta la Iglesia. </p>
-            <p> -11 km subida hasta el puesto del Arco, calle 200 metros fuertes x 300 metros suaves. </p>
-            <p> -9 km trail por "rio seco", buenas sensaciones. </p>
-            </div>
-        </div>
-
-        <div class="small-paragraph-container">
-            <p> Método de recuperación: </p>
-            <p> -SEMANA 14 SIN MÉTODO DE RECUPERACIÓN. </p>
-        </div>
-      
-        <div id="column-container 2">
-        <canvas id="myChart-line-2"></canvas>
-        </div>   
-
-        <div class="image-container">
-            <img class="imagen-chica" src="Montaña blanco.png" alt="Montaña blanco">
-          </div>           
-    
+    <div class="main-container">
+        <h1>PROGRAMA DE ENTRENAMIENTO GDE -Trail Running</h1>
+        <h1>Alumno: Roberto Kotch</h1>
     </div>
+    <h2> OBJETIVO MENSUAL: Mejorar las transiciones y candecia en subida.</h2>
+    <h2> FASE: Choque. </h2>
+    <h2 id ="pageTitle">PRÓXIMA CARRERA: -- </h2> 
+    <h2 id="result"></h2>
+    <!-- <p>Indicaciones previas:  </p>  -->         
+
+    <div class="sub-container">
+        <h4>SEMANA 15
+            <br>Objetivo semanal: Énfasis en la tecnica de carrera.</br>
+        </h4>
+        <p>Entrada en calor </p>   
+        <p> 3 vueltas x 13 repeticiones </p>
+        <div class="image-container">  
+            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                <source src="Video1.mp4" type="video/mp4">
+                </video>
+        </div>
+        <div class="image-container">  
+            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                <source src="Video2.mp4" type="video/mp4">
+                </video>
+    </div>
+    <div> <h2> Running </h2>
+    </div>    
+    <div class="column-container 1">           
+        <div class="column">
+            <h3>Dia 1</h3>
+            <p> Miércoles: 13 km series triangulares. </p>
+            <p>  -3 km ágiles. </p>
+            <p>  -2 km, 8 series x 300m subida fuerte x pausa pasiva 1'/1'30". </p>
+            <p>  -2 km, 8 series x 300m bajada fuerte x pausa pasiva 1'30"/2'. </p>
+            <p>  -2 km, 8 series x 300m plano fuerte x 2' pausa pasiva. </p>
+            <p>  -4 km bajas pulsaciones. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 2</h3>                          
+            <p> Viernes: 15km trail senderos bajos. </p>
+            <p>  -3 km de mayor a menor. </p>
+            <p>  -4 km intervalos, 60 series x 15 seg fuerte x 15 seg ágiles senderos bajos. </p>
+            <p>  -4 km, 3' de subidas fuertes y bajadas controladas x 3' bajadas fuertes y subidas controladas. </p>
+            <p>  -4 km de menor a mayor. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 3</h3>
+            <p> Sábado: 15km trail Divisadero Largo. </p>
+            <p>  -3 km circuito chico, por arriba de menos a más, bajada por río seco ágil. </p>
+            <p>  -4 km circuito medio, subida por río seco fuerte, bajada por arriba suave. </p>
+            <p>  -5 km circuito largo por arriba fuerte, bajada por rio seco ágil. </p>
+            <p>  -3 km circuito chico lo mas fuerte posible. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 4</h3>
+            <p>Lunes: 11km trail Parque de Montaña. </p>
+            <p>  -2 km de menor a mayor aumentando cada 1km. </p>
+            <p>  -4 km, 5' fuerte x 1' suave x 4' ágiles. </p>
+            <p>  -3 km, 4' suave x 3' fuertísimooo x 1' suave. </p>
+            <p>  -2 km, 5' fuerte x 2' ágiles x 3' suave. </p>
+        </div>
+    </div>
+
+    <div class="small-paragraph-container">
+        <p> Método de recuperación </p>
+        <p> -Elongación de isquiotibiales y automasaje con bastón, 3´por pierna (repetimos 3 veces la pierna que más nos moleste). </p>     
+    </div>
+                        
+    <div id="column-container 1">
+    <canvas id="myChart-line-1"></canvas>
+    </div>
+            
+    <div class="sub-container">
+        <h4>SEMANA 16
+            <br>Objetivo semanal: Énfasis en la tecnica de bajada.</br>
+        </h4>
+        <p>Entrada en calor </p>   
+        <p> 4 vueltas x 12 repeticiones </p>
+        <div class="image-container">  
+            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                <source src="Video3.mp4" type="video/mp4">
+                </video>
+        </div>
+        <div class="image-container">  
+            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                <source src="Video4.mp4" type="video/mp4">
+                </video>
+        </div>
+    </div>
+
+    <div><h2> Running </h2>
+    </div>
+
+    <div class="column-container 1">           
+        <div class="column">
+            <h3>Dia 1</h3>
+            <p>Miércoles: 11km calle pasadas. </p>
+            <p>  -2 km de menor a mayor aumentando cada 3'. </p>
+            <p>  -4 km, 8 series x 500m fuertes x  pausa pasiva incompleta. </p>
+            <p>  -4 km, 8 series x 500m fuertes x pausa pasiva 1'. </p>
+            <p>  -1 km de menor a mayor. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 2</h3>        
+            <p> Viernes: 11km trail mixto. </p>
+            <p>  -2 km calle en subida, 20" suave x 20"fuerte. </p>
+            <p>  -3 km, 300m fuerte x 200m suave. </p>
+            <p>  -5 km subida y bajada por filo sur(350m subida y bajada) 
+                <br>+ transición hacia 7 colina suave (1.4km) </br>
+                <br>+ subida y bajada fuerte al 7 colina (300m subida y bajada)</br>
+                <br>+ transición hacia filo sur (1.4km). </br>
+            </p>
+            <p>  -1 km: ágiles calle. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 3</h3>        
+            <p> Sábado: 14km trail zona del Arco suave. </p>
+            <p>  -3 km fuertísimosss. </p>
+            <p>  -7 km suaves, énfasis en la respiración y postura de hombros. </p>
+            <p>  -4 km fuertísimosss. </p>
+        </div>    
+        <div class="column">
+            <h3>Dia 4</h3>        
+            <p> Lunes: 8 km series triangulares. </p>
+            <p>  -2 km ágiles. </p>
+            <p>  -2 km, 10 series x 200m subida fuerte x pausa pasiva 1'/1'30". </p>
+            <p>  -2 km, 10 series x 200m bajada fuerte x pausa pasiva 1'30"/2'. </p>
+            <p>  -2 km, 10 series x 200m planos fuerte x pausa pasiva 2'. </p>
+            <p>  -3 km bajas pulsaciones. </p>
+        </div>    
+    </div>
+
+
+    <div class="small-paragraph-container">
+        <p> Método de recuperación </p>
+        <p>   -Elongación de isquiotibiales y automasaje con bastón, 3´por pierna (repetimos 3 veces la pierna que mas nos moleste).  </p>
+    </div>
+              
+    <div id="column-container 1">
+    <canvas id="myChart-line-2"></canvas>
+    </div>      
+
+    <div class="image-container">
+        <img class="imagen-chica" src="Montaña blanco.png" alt="Montaña blanco">
+    </div>      
+
+</div>
     <script src="script.js"></script>
 </body>
 </html>
