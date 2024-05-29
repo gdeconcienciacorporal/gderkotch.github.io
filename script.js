@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  actualizarDiasRestantes();
-  setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario 
-   // Datos para el gráfico de líneas
+ // actualizarDiasRestantes();
+ //setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario 
+ // Datos para el gráfico de líneas
 const dataLine1 = {
   labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'], // Etiquetas de los días
   datasets: [{
     label: 'Km recorridos en Semana 15',
-    data: [13, 15, 15, 11], // Datos de los km recorridos en cada día
+    data: [17, 19, 27, 17], // Datos de los km recorridos en cada día
     borderColor: 'rgba(75, 192, 192, 1)',
     fill: true,
     tension: 0.1
@@ -17,7 +17,7 @@ const dataLine2 = {
   labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'], // Etiquetas de los días
   datasets: [{
     label: 'Km recorridos en Semana 16',
-    data: [13, 11, 14, 8], // Datos de los km recorridos en cada día
+    data: [14, 15, 20, 15], // Datos de los km recorridos en cada día
     borderColor: 'rgba(153, 102, 255, 1)',
     fill: true,
     tension: 0.1
@@ -25,7 +25,6 @@ const dataLine2 = {
 };
 
 // Configuración del gráfico de líneas
-
 // Seleccione los contextos de los <canvas> y cree los gráficos
 const myChartLine1 = new Chart(document.getElementById('myChart-line-1'), {
   type: 'line',
@@ -51,22 +50,16 @@ const myChartLine1 = new Chart(document.getElementById('myChart-line-1'), {
   }
 });
 
-function actualizarDiasRestantes() {
-  // Obtener el título que contiene la fecha objetivo
+function actualizarDiasRestantes() { // Obtener el título que contiene la fecha objetivo
   const pageTitle =  document.getElementById('pageTitle').innerText;
-    
   // Extraer la fecha de la cadena del título
   const objetivoDate = new Date(pageTitle.split(": ")[1]);
-
   // Obtener la fecha actual
   const currentDate = new Date();
-
   // Calcular la diferencia en milisegundos entre las dos fechas
   const timeDiff = objetivoDate - currentDate;
-
   // Calcular la cantidad de días
   const daysDiff = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
-
   // Mostrar el resultado
   const resultElement = document.getElementById('result');
   resultElement.textContent = `Faltan ${daysDiff} días para llegar a la carrera.`;
