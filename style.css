@@ -14,7 +14,7 @@ body {
 }
 
 .main-container {
-  background-color: #1f1f2269;
+  background-color: #2b2e2d69;
   padding: 2em; /* Utiliza em en lugar de píxeles */
   margin: 0; /* Eliminado para evitar márgenes laterales en dispositivos pequeños */
   text-align: center;
@@ -27,7 +27,7 @@ body {
 }
 
 .sub-container h2 {
-  color: #333333;
+  color: #15c023;
   font-size: 1.5em;
   margin: 0; /* Eliminado para evitar márgenes predeterminados */
   font-weight: bold;
@@ -139,7 +139,7 @@ video {
 }
 
 .sub-container h4 {
-  background-color: #96c035;
+  background-color: #04521b;
   padding: 2em; /* Utiliza em en lugar de píxeles */
   margin: 0; /* Elimina márgenes predeterminados */
   font-family: 'Arial', sans-serif;
